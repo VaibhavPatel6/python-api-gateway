@@ -1,0 +1,13 @@
+# secrets
+.env
+
+# Python / tooling
+.venv/
+__pycache__/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+
+# macOS
+.DS_Store
