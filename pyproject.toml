@@ -5,6 +5,7 @@ requires-python = ">=3.14"
 dependencies = [
     "fastapi>=0.162.7",
     "httpx>=0.28.1",
+    "pydantic-settings>=2.16.3",
     "uvicorn>=0.54.0",
 ]
 
@@ -31,3 +32,4 @@ select = ["E", "F", "I", "B", "UP", "ASYNC"]
 [tool.mypy]
 strict = true
 files = ["gateway", "upstreams", "tests"]
+plugins = ["pydantic.mypy"]
